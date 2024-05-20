@@ -1,3 +1,14 @@
+## 0.2.0 (2024-05-20)
+
+
+### 🚀 Features
+
+- x ([3bb24dd](https://github.com/HyperLife1119/nx-example/commit/3bb24dd))
+
+### ❤️  Thank You
+
+- hyperlife1119 @HyperLife1119
+
 ## 0.1.0 (2024-05-13)
 
 
