@@ -1,8 +1,10 @@
 import { Component, forwardRef } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'nx-switch',
+  standalone: true,
+  imports: [FormsModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -10,7 +12,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
       multi: true
     }
   ],
-  template: `<label><input type="checkbox" [(ngModel)]="value"> {{label}}</label>`
+  template: `<label><input type="checkbox" [ngModel]="value"> {{label}}</label>`
 })
 export class NxSwitchComponent implements ControlValueAccessor {
   value: boolean = false;
