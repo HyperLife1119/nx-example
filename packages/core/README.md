@@ -8,11 +8,11 @@
 
 ## Nx-Switch 组件
 
-`nx-switch` 组件是核心包的新添加，现在被设计为一个独立组件。它提供了一个切换开关，可以与 Angular 表单集成。这个组件允许通过 Angular 的 `@Input` 为 `value` 属性进行绑定，增强了它与 Angular 反应式表单的兼容性和使用灵活性。
+`nx-switch` 组件是核心包的新添加，现在被设计为一个独立组件。它提供了一个切换开关，可以与 Angular 表单集成。这个组件允许通过 Angular 的 `ControlValueAccessor` 接口进行双向数据绑定，增强了它与 Angular 反应式表单的兼容性和使用灵活性。
 
 ### 特性
 
-- 通过 `@Input` 为 `value` 属性进行绑定
+- 支持 `ControlValueAccessor` 接口，允许自定义表单控件集成
 - 与 Angular 的 `FormControl` 集成
 - 独立组件，无需导入到模块中
 
@@ -21,7 +21,7 @@
 要使用 `nx-switch` 组件，只需将其添加到你的模板中：
 
 ```html
-<nx-switch [value]="yourModelVariable"></nx-switch>
+<nx-switch [(ngModel)]="yourModelVariable"></nx-switch>
 ```
 
 确保你已经在你的独立组件中导入了 `FormsModule` 来支持 `ngModel` 指令。
