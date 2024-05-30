@@ -8,20 +8,20 @@ Run `nx test core` to execute the unit tests.
 
 ## Nx-Switch Component
 
-The `nx-switch` component is a new addition to the core package, providing a toggle switch that integrates with Angular forms through the `NG_VALUE_ACCESSOR`. This component allows for two-way data binding and is fully compatible with Angular's reactive forms.
+The `nx-switch` component is a new addition to the core package, now designed as a standalone component. It provides a toggle switch that integrates with Angular forms. This component allows for binding through an Angular `@Input` for the `value` property, enhancing its compatibility and usage flexibility with Angular's reactive forms.
 
 ### Features
 
-- Two-way data binding with `ngModel`
+- Binding with `@Input` for the `value` property
 - Integration with Angular's `FormControl`
-- Supports `NG_VALUE_ACCESSOR` for custom form control integration
+- Standalone component, no need for importing it into a module
 
 ### Usage
 
 To use the `nx-switch` component, simply add it to your template:
 
 ```html
-<nx-switch [(ngModel)]="yourModelVariable"></nx-switch>
+<nx-switch [value]="yourModelVariable"></nx-switch>
 ```
 
 Ensure you have imported `FormsModule` or `ReactiveFormsModule` in your module to support form functionalities.
