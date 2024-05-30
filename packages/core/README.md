@@ -24,4 +24,4 @@ To use the `nx-switch` component, simply add it to your template:
 <nx-switch [value]="yourModelVariable"></nx-switch>
 ```
 
-Ensure you have imported `FormsModule` or `ReactiveFormsModule` in your module to support form functionalities.
+Ensure you have imported `FormsModule` in your standalone component to support the `ngModel` directive.

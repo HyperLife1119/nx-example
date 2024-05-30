@@ -1,9 +1,10 @@
 import { Component, forwardRef, Input } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'nx-switch',
   standalone: true,
+  imports: [FormsModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
