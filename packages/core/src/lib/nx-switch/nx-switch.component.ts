@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input } from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 
 @Component({
@@ -15,7 +15,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR, FormsModule } from '@angular/f
   template: `<label><input type="checkbox" [ngModel]="value"> {{label}}</label>`
 })
 export class NxSwitchComponent implements ControlValueAccessor {
-  @Input() value: boolean = false;
+  value: boolean = false;
   onChange: any = () => {};
   onTouched: any = () => {};
 

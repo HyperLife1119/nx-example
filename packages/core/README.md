@@ -1,27 +1,27 @@
-# core
+# 核心库
 
-This library was generated with [Nx](https://nx.dev).
+这个库是用 [Nx](https://nx.dev) 生成的。
 
-## Running unit tests
+## 运行单元测试
 
-Run `nx test core` to execute the unit tests.
+运行 `nx test core` 来执行单元测试。
 
-## Nx-Switch Component
+## Nx-Switch 组件
 
-The `nx-switch` component is a new addition to the core package, now designed as a standalone component. It provides a toggle switch that integrates with Angular forms. This component allows for binding through an Angular `@Input` for the `value` property, enhancing its compatibility and usage flexibility with Angular's reactive forms.
+`nx-switch` 组件是核心包的新添加，现在被设计为一个独立组件。它提供了一个切换开关，可以与 Angular 表单集成。这个组件允许通过 Angular 的 `@Input` 为 `value` 属性进行绑定，增强了它与 Angular 反应式表单的兼容性和使用灵活性。
 
-### Features
+### 特性
 
-- Binding with `@Input` for the `value` property
-- Integration with Angular's `FormControl`
-- Standalone component, no need for importing it into a module
+- 通过 `@Input` 为 `value` 属性进行绑定
+- 与 Angular 的 `FormControl` 集成
+- 独立组件，无需导入到模块中
 
-### Usage
+### 使用方法
 
-To use the `nx-switch` component, simply add it to your template:
+要使用 `nx-switch` 组件，只需将其添加到你的模板中：
 
 ```html
 <nx-switch [value]="yourModelVariable"></nx-switch>
 ```
 
-Ensure you have imported `FormsModule` in your standalone component to support the `ngModel` directive.
+确保你已经在你的独立组件中导入了 `FormsModule` 来支持 `ngModel` 指令。
